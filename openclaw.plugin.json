@@ -6,6 +6,9 @@
   "activation": {
     "onStartup": true
   },
+  "categories": [
+    "models"
+  ],
   "contracts": {
     "decisionProviders": [
       "opencode-jev"
