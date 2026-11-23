@@ -1,0 +1,34 @@
+{
+  "name": "@ibiproductions/opencode-jev",
+  "version": "0.1.0",
+  "description": "OpenCode Jev typed decision provider for OpenClaw",
+  "type": "module",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "openclaw.plugin.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/provider.test.js",
+    "test:live": "OPENCODE_JEV_LIVE=1 node --test test/live.test.js"
+  },
+  "peerDependencies": {
+    "openclaw": ">=2026.9.6"
+  },
+  "peerDependenciesMeta": {
+    "openclaw": {
+      "optional": true
+    }
+  },
+  "openclaw": {
+    "extensions": [
+      "./index.js"
+    ],
+    "compat": {
+      "pluginApi": ">=2026.10.7",
+      "minGatewayVersion": "2026.10.7"
+    }
+  }
+}
